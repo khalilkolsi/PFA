@@ -1,0 +1,34 @@
+gold : 241; 140; 0
+
+bleu : 2; 119; 163
+
+viol : 98; 79; 131
+
+org : 241; 90; 35
+
+vert : 1; 102; 82
+
+rose : 177; 48; 91
+
+
+
+************couleur Menu********
+
+bleu :36; 106; 140
+
+gold :241; 140; 0
+
+jaune :207; 169; 78
+
+violet rouge :164; 102; 117
+
+bleu ciel : 75; 172; 198
+
+vert ciel: 131; 186; 150
+
+vert pistache : 119; 147; 60
+
+violet: 128; 100; 162
+
+-----------------
+invetaireEdit : 255; 224; 130 color -> AntiqueWhite & PaleVioletRed & bleu: 2; 136; 209

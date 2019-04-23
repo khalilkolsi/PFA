@@ -1,0 +1,53 @@
+page-gestion-des-achats {
+
+    .menu{
+        margin: 0% 5% 5% 5%;
+    }
+
+    .rectangleButton{
+        height: 180px;
+        //width: 320px;
+        width: 98%;
+        border-radius: 0%;
+        padding-right: 0%;
+        margin-right: 0%;
+    }
+
+    .squareButton {
+        height: 180px;
+        //width: 150px;
+        width: 95%;
+        border-radius: 0%;
+        padding-right: 0%;
+        margin-right: 0%;
+    }
+
+    .squareBanner {
+        position: absolute;
+        bottom: 4px;
+        width: 91%;
+        padding-left: 1.4px;
+    }
+
+    .rectangleBanner {
+        position: absolute;
+        bottom: 4px;
+        width: 96%;
+        padding-left: 1.4px;
+    }
+
+    .menu-coll{
+        width: 310px
+    }
+
+    .facturation-popover{
+        min-width: 60%;
+        max-width: 60%
+    }
+    .popover-viewport{
+        min-width: 60%;
+        max-width: 60%
+    }
+}
+    
+

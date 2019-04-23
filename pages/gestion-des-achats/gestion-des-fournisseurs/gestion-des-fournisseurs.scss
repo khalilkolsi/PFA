@@ -1,0 +1,51 @@
+page-gestion-des-fournisseurs {
+
+    .button-group {
+        .ion-col {
+          &:first-child:not(:last-child) {
+            padding-right: 0;
+            .button {
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+            }
+          }
+          &:not(:first-child):not(:last-child) {
+            padding-right: 0;
+            padding-left: 0;
+            .button {
+              border-radius: 0;
+            }
+          }
+          &:last-child:not(:first-child) {
+            padding-left: 0;
+            .button {
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+            }
+          }
+        }
+      }
+
+      .toolBarButton{
+        height: 42px
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th{
+        background-color: #f4f4f4;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f4f4f4;
+      }
+}

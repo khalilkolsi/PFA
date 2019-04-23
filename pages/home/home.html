@@ -1,0 +1,56 @@
+
+<ion-content padding>
+    <div class="container" >
+
+            <ion-grid>
+
+                <ion-row>
+
+                    <ion-col col-1>
+                        <ion-icon ios="ios-lock" md="md-lock"></ion-icon>
+                    </ion-col>
+                    <ion-col col-9>
+                        <ion-item class="input">
+                            <ion-input type="{{type}}" name="password" ngModel #password="ngModel" required pattern=".{4,10}"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col col-1>
+                        <button *ngIf="!showPass" ion-button clear color="dark" type="button" item-right (press)="showPassword()"> <ion-icon name="ios-eye-off-outline"></ion-icon></button>
+                        <button *ngIf="showPass" ion-button clear color="dark" type="button" item-right (touchend)="hidePassword()"> <ion-icon name="ios-eye-outline"></ion-icon></button>
+                    </ion-col>
+
+                </ion-row>
+
+            </ion-grid>
+
+
+        <ion-grid>
+            <ion-row>
+              <ion-col col-4><button ion-button   color="dark">7</button></ion-col>
+              <ion-col col-4><button ion-button   color="dark">8</button></ion-col>
+              <ion-col col-4><button ion-button   color="dark">9</button></ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col col-4><button ion-button   color="dark">6</button></ion-col>
+                <ion-col col-4><button ion-button   color="dark">5</button></ion-col>
+                <ion-col col-4><button ion-button   color="dark">4</button></ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col col-4><button ion-button   color="dark">3</button></ion-col>
+                <ion-col col-4><button ion-button   color="dark">2</button></ion-col>
+                <ion-col col-4><button ion-button   color="dark">1</button></ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col col-4><button ion-button   color="gold">0</button></ion-col>
+                <ion-col col-4><button ion-button   color="dark">0</button></ion-col>
+                <ion-col col-4><button ion-button   color="bleu" (click)="goTo('AccueilPage')">ok</button></ion-col>
+              </ion-row>
+
+        </ion-grid>
+
+    </div>
+   
+</ion-content>

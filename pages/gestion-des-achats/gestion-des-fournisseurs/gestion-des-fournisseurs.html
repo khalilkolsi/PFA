@@ -1,0 +1,91 @@
+<ion-header >
+  <ion-navbar color="bleu" #TopMenu>
+      <div>
+        <img margin style="vertical-align:middle;height:40px" src="../../../assets/imgs/pos-logo.png">
+        <div style="vertical-align:middle; display:inline; color:white; font-size:20px">Gestion des Fournisseurs<span style="font-size:30px" margin>|</span></div>
+        <img margin style="vertical-align:middle;height:40px" src="../../../assets/imgs/gestion-des-achats/Dem_32.png">
+        <div style="vertical-align:middle; display:inline; color:white; font-size:20px">Démarrer</div>
+        <img margin style="vertical-align:middle;height:40px" src="../../../assets/imgs/gestion-des-achats/Nov_32.png">
+        <div style="vertical-align:middle; display:inline; color:white; font-size:20px">Nouveau</div>
+        <img margin style="vertical-align:middle;height:40px" src="../../../assets/imgs/Images POS/Ribbon images/Edit_32.png">
+        <div style="vertical-align:middle; display:inline; color:white; font-size:20px">Modifier</div>
+        <img margin style="vertical-align:middle;height:40px" src="../../../assets/imgs/Images POS/Ribbon images/Dele_32.png">
+        <div style="vertical-align:middle; display:inline; color:white; font-size:20px">Supprimer</div>
+        <img margin style="vertical-align:middle;height:40px" src="../../../assets/imgs/Images POS/Ribbon images/Print_32.png">
+        <div style="vertical-align:middle; display:inline; color:white; font-size:20px">Imprimer</div>  
+      </div>  
+  </ion-navbar>
+
+  <ion-toolbar>
+    <ion-grid #Recherche>
+      <ion-row>
+        <ion-col col-8>
+            <ion-grid class="button-group">
+                <ion-row>
+                    <ion-col col-6>
+                        <ion-searchbar
+                        [(ngModel)]="myInput"
+                        [showCancelButton]="shouldShowCancel"
+                        (ionInput)="onInput($event)"
+                        (ionCancel)="onCancel($event)"
+                        placeholder="Entrez le texte à chercher...">
+                      </ion-searchbar>
+                      </ion-col>
+                  <ion-col>
+                    <button ion-button block color="bleu" class="toolBarButton">Trouver</button>
+                  </ion-col>
+                  <ion-col>
+                    <button ion-button block color="bleu" class="toolBarButton">Effacer</button>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-scroll style="height:40%"scrollX="true" scrollY="true">
+        <table style="width:100%">
+            <thead>
+                <th style="width:8.33%">CODE</th> 
+                <th style="width:16.66%">SOCIETE</th>
+                <th style="width:8.33%">ADRESSE</th>
+                <th style="width:8.33%">VILLE</th> 
+                <th style="width:8.33%">TEL</th>
+                <th style="width:8.33%">EMAIL</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="width:8.33%">CODE</td> 
+                <td style="width:16.66%">SOCIETE</td>
+                <td style="width:8.33%">ADRESSE</td>
+                <td style="width:8.33%">VILLE</td> 
+                <td style="width:8.33%">TEL</td>
+                <td style="width:8.33%">EMAIL</td> 
+            </tr>
+            <tr>
+                <td style="width:8.33%">CODE</td> 
+                <td style="width:16.66%">SOCIETE</td>
+                <td style="width:8.33%">ADRESSE</td>
+                <td style="width:8.33%">VILLE</td> 
+                <td style="width:8.33%">TEL</td>
+                <td style="width:8.33%">EMAIL</td>  
+            </tr>
+            <tr>
+                <td style="width:8.33%">CODE</td> 
+                <td style="width:16.66%">SOCIETE</td>
+                <td style="width:8.33%">ADRESSE</td>
+                <td style="width:8.33%">VILLE</td> 
+                <td style="width:8.33%">TEL</td>
+                <td style="width:8.33%">EMAIL</td>  
+            </tr>
+            </tbody>
+          </table>
+    </ion-scroll>
+
+
+</ion-content>

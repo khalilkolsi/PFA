@@ -1,0 +1,31 @@
+page-home {
+
+    ion-content{
+        background-image: url('../../assets/imgs/Backsupr.jpg');
+    }
+
+    .container{
+        zoom: 2.0;
+        background-color: whitesmoke;
+        opacity: 0.6;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000; 
+        -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.32);
+        -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.32);
+        box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.32); 
+        position: relative;
+        margin: 15% 35% 15% 35%;
+    }
+
+    .input{
+        height: 50%	 	
+    }
+
+    button{
+        height: 50px;
+        width: 50px;
+    }
+
+}

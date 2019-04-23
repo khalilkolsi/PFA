@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>accueil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="menu">
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <div>
+                    <div>
+                        <button ion-button padding class="menuButton" color="bleu">
+                            <div>
+                                <img src="../../assets/imgs/menu/mouvStock50.png" style="height:80px"><br><br>
+                                Gestion des stocks
+                            </div>
+                        </button>
+                        <div class="bottom-left">
+                                <img src="../../assets/imgs/menu/HoverMenuCaisseO.png" style="height:2.3rem">
+                        </div>
+                    </div>
+                </div>
+            </ion-col>
+            <ion-col col-6>
+                    <div>
+                        <div>
+                            <button ion-button padding class="menuButton" color="bleu">
+                                <div>
+                                    <img src="../../assets/imgs/menu/GestVente50.png" style="height:80px"><br><br>
+                                    Gestion des ventes
+                                </div>
+                            </button>
+                            <div class="bottom-left">
+                                    <img src="../../assets/imgs/menu/HoverMenuCaisseO.png" style="height:2.3rem">
+                            </div>
+                        </div>
+                    </div>
+                </ion-col>
+        </ion-row>
+        <ion-row>
+                <ion-col col-6>
+                        <div>
+                            <div>
+                                <button ion-button padding class="menuButton" color="bleu" (click)="goTo('GestionDesAchatsPage')">
+                                    <div>
+                                        <img src="../../assets/imgs/menu/GestAchat50.png" style="height:80px"><br><br>
+                                        Gestion des achats
+                                    </div>
+                                </button>
+                                <div class="bottom-left">
+                                        <img src="../../assets/imgs/menu/HoverMenuCaisseO.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                        </div>
+                    </ion-col>
+                    <ion-col col-6>
+                            <div>
+                                <div>
+                                    <button ion-button padding class="menuButton" color="bleu">
+                                        <div>
+                                            <img src="../../assets/imgs/menu/ciasse50.png" style="height:80px"><br><br>
+                                            Gestion des trésoreries
+                                        </div>
+                                    </button>
+                                    <div class="bottom-left">
+                                            <img src="../../assets/imgs/menu/HoverMenuCaisseO.png" style="height:2.3rem">
+                                    </div>
+                                </div>
+                            </div>
+                        </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+  </div>
+
+</ion-content>

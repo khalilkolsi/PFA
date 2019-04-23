@@ -1,0 +1,260 @@
+<ion-header >
+  <ion-navbar color="bleu">
+      <div >
+            <img margin style="vertical-align:middle;height:40px" src="../../assets/imgs/pos-logo.png">
+            <div style="vertical-align:middle; display:inline; color:white; font-size:20px">Gestion des Achats</div>
+      </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>
+            <ion-grid >
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <div>
+                                <button ion-button class="rectangleButton" color="gold" (click)="goTo('GestionDesFournisseursPage')">
+                                    <div align="center">
+                                        <img src="../../assets/imgs/gestion-des-achats/lstClient35.png"  style="height:60px">
+                                        <p>Gestion des Fournisseurs</p>
+                                    </div>
+                                </button>
+                                <div class="rectangleBanner">
+                                        <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                        <ion-col>
+                          <div>
+                              <div>
+                                <button ion-button padding class="squareButton" color="gold" (click)="goTo('FicheFournisseurPage')">
+                                    <div align="center">
+                                        <img src="../../assets/imgs/gestion-des-achats/bnForun35.png" style="height:60px"><br><br>
+                                        Fiche Fournisseur
+                                    </div>
+                                </button>
+                                <div class="squareBanner">
+                                  <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                          </div>
+                        </ion-col>
+                        <ion-col>
+                          <div>
+                              <div>
+                                <button ion-button padding class="squareButton" color="gold" (click)="goTo('ExtantFournisseurPage')">
+                                    <div align="center">
+                                        <img src="../../assets/imgs/gestion-des-achats/bnGratuit35.png" style="height:60px"><br><br>
+                                        Extant Fournisseur
+                                    </div>
+                                </button>
+                                <div class="squareBanner">
+                                  <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                          </div>
+                        </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <div>
+                                <button ion-button class="rectangleButton" color="bleu" (click)="goTo('SuivieDocumentsAchatPage')">
+                                    <div align="middle">
+                                        <img src="../../assets/imgs/gestion-des-achats/fac35t.png"  style="height:60px"><br><br>
+                                        Suivie Documents Achats
+                                    </div>
+                                </button>
+                                <div class="rectangleBanner">
+                                        <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+            </ion-grid>
+
+        </ion-col>
+
+        <ion-col>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <div>
+                                <button ion-button padding class="rectangleButton" color="viol" (click)="presentPopover()">
+                                    <div align="center">
+                                        <img src="../../assets/imgs/gestion-des-achats/fac35t.png"  style="height:60px"><br><br>
+                                        Facturation
+                                    </div>
+                                </button>
+                                <div class="rectangleBanner">
+                                        <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col col-12>
+                        <div>
+                            <div>
+                                <button ion-button padding class="rectangleButton" color="viol">
+                                    <div align="center">
+                                        <img src="../../assets/imgs/gestion-des-achats/cmdliste35.png"  style="height:60px"><br><br>
+                                        Gestion des Factures
+                                    </div>
+                                </button>
+                                <div class="rectangleBanner">
+                                        <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col col-12>
+                        <div>
+                            <div>
+                                <button ion-button padding class="rectangleButton" color="viol">
+                                    <div align="center">
+                                        <img src="../../assets/imgs/gestion-des-achats/cmdliste35.png"  style="height:60px"><br><br>
+                                        Gestion des Avoirs
+                                    </div>
+                                </button>
+                                <div class="rectangleBanner">
+                                        <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </ion-col>
+
+        <ion-col>
+            <ion-grid>
+
+                <ion-row>
+                        <ion-col>
+                            <div>
+                                <div>
+                                <button ion-button padding class="squareButton" color="vert">
+                                    <div align="center">
+                                        <img src="../../assets/imgs/gestion-des-achats/Achoffreprix35.png" style="height:60px"><br><br>
+                                        Gestion des Offres
+                                    </div>
+                                </button>
+                                <div class="squareBanner">
+                                    <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div>
+                                <div>
+                                <button ion-button padding class="squareButton" color="vert" (click)="goTo('GestionDesAchatsPage')">
+                                    <div align="center">
+                                        <img src="../../assets/imgs/gestion-des-achats/cmdliste35.png" style="height:60px"><br><br>
+                                        Gestion des<br>Commandes
+                                    </div>
+                                </button>
+                                <div class="squareBanner">
+                                    <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                                </div>
+                            </div>
+                            </div>
+                        </ion-col>
+                </ion-row>
+                                
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <div>
+                            <button ion-button padding class="squareButton" color="vert">
+                                <div align="center">
+                                    <img src="../../assets/imgs/gestion-des-achats/BrFourn35.png" style="height:60px"><br><br>
+                                    Gestion des<br>Livraisons
+                                </div>
+                            </button>
+                            <div class="squareBanner">
+                                <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                            </div>
+                        </div>
+                        </div>
+                    </ion-col>
+
+                    <ion-col>
+                        <div>
+                            <div>
+                            <button ion-button padding class="squareButton" color="vert" (click)="goTo('GestionDesAchatsPage')">
+                                <div align="center">
+                                    <img src="../../assets/imgs/gestion-des-achats/BEFourn35.png" style="height:60px"><br><br>
+                                    Gestion des<br>Retours
+                                </div>
+                            </button>
+                            <div class="squareBanner">
+                                <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                            </div>
+                        </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <div>
+                            <button ion-button padding class="squareButton" color="rose">
+                                <div align="center">
+                                    <img src="../../assets/imgs/gestion-des-achats/decaissement35.png" style="height:60px"><br><br>
+                                    Saisie Décaissement
+                                </div>
+                            </button>
+                            <div class="squareBanner">
+                                <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                            </div>
+                        </div>
+                        </div>
+                    </ion-col>
+
+                    <ion-col>
+                        <div>
+                            <div>
+                            <button ion-button padding class="squareButton" color="rose" (click)="goTo('GestionDesAchatsPage')">
+                                <div align="center">
+                                    <img src="../../assets/imgs/gestion-des-achats/ciasse35.png" style="height:60px"><br><br>
+                                    Gestion des<br>Décaissements
+                                </div>
+                            </button>
+                            <div class="squareBanner">
+                                <img src="../../assets/imgs/menu/BannerLarge.png" style="height:2.3rem">
+                            </div>
+                        </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
